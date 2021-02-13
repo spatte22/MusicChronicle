@@ -70,6 +70,12 @@ a:visited {
 	height: 18px;
 	width: 18px;
 	cursor: pointer;
+	
+}
+
+.buttonBlank:hover {
+	background-color: var(--vibrantOrange);
+	border-radius: 7px;
 }
 
 .buttonFill {
@@ -86,7 +92,6 @@ a:visited {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	/*margin: 0 1vw 0 1vw;*/
 	position: relative;
 	margin-left: -12vw;
 }

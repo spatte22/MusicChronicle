@@ -8,11 +8,5 @@ for (a=0; a < timelineButton.length; a++) {
 		}
 }
 
-function enterChronicle() {
-	let enterButton = document.getElementById('landingPage');
-	if (enterButton.style.display == 'flex') {
-		enterButton.style.display = 'none';
-	}
-}
 
 
