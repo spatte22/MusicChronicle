@@ -1,0 +1,108 @@
+/* Variables */
+
+:root {
+	--backgroundColor: #000000; 	/*black*/
+	--white: #FFFFFF;				/*white*/
+	--whiteOpacity: 255, 255, 255;  /*for hover white opacity */				
+	--vibrantOrange: #ff4d00;
+	--easyOrange: #ff6929;
+}
+
+#landingPage {
+	height: 98vh;
+	width: 98vw;
+	overflow: hidden;
+	opacity: .8;
+	z-index: 5;
+	position: absolute;
+	top: 1vh;
+	left: 1vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border: 0px solid var(--backgroundColor);
+}
+
+#landingPar {
+	color: var(--backgroundColor);
+	font-weight: bold;
+	font-size: 3em;
+	text-align: center;
+	background-color: var(--white);
+	padding-top: 15vh;
+}
+
+#landingPar p:nth-child(2) {
+	font-size: .5em;
+}
+
+#entryButton {
+	border: 5px solid var(--backgroundColor);
+	border-radius: 10px;
+	color: var(--backgroundColor);
+	padding: 1em;
+	font-size: 1.5em;
+	text-align: center;
+	width: 15%;
+	margin: auto;
+	font-weight: bold;
+	max-width: 15em;
+	background-color: var(--white);
+}
+
+#entryButton:hover {
+	background-color: var(--vibrantOrange);
+	cursor: pointer;
+}
+
+#entryButton2 {
+	border: 5px solid var(--backgroundColor);
+	border-radius: 10px;
+	color: var(--backgroundColor);
+	padding: 0em;
+	font-size: 1em;
+	text-align: center;
+	width: 15%;
+	margin: 3em auto 0em auto;
+	font-weight: bold;
+	max-width: 12em;
+	background-color: var(--white);
+}
+
+#entryButton2:hover {
+	background-color: var(--vibrantOrange);
+	cursor: pointer;
+}
+
+#entryButton2 a,
+#entryButton2 a:visited,
+#entryButton2 a:hover {
+	text-decoration: none;
+	color: var(--backgroundColor);
+	width: 12%;
+}
+
+#section1 {
+	background-color: var(--white);
+	height: 40vh;
+	width: 98vw;
+	opacity: .9;
+	z-index: 5;
+}
+
+#section2 {
+	background-color: var(--white);
+	height: 20vh;
+	width: 98vw;
+	opacity: .9;
+	z-index: 5;
+	padding-top: 8vh;
+}
+
+#section3 {
+	background-color: var(--white);
+	height: 38vh;
+	width: 98vw;
+	opacity: .9;
+	z-index: 5;
+}
