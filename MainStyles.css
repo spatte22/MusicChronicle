@@ -107,7 +107,7 @@ a:visited {
 	max-width: 30vw;
 	padding: 1em;
 	overflow: hidden;
-
+	z-index: 5;
 }
 
 .timelineContentWrapper {
@@ -231,6 +231,83 @@ a:visited {
 	z-index: -10;
 }
 
+
+
+/* WHAT IS THIS SITE */
+
+#left-expand {
+	position: absolute;
+	left: 0;
+	top: 40%;
+	background-image: url(images/QuestionMark.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 53;
+	width: 33px;
+	padding: ;
+	z-index: ;
+}
+
+#left-expand-mark-container {
+	position: relative;
+	left: -25px;
+	border-top: 1px var(--white) solid;
+	border-right: 1px var(--white) solid;
+	border-bottom: 1px var(--white) solid;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	max-height: 107px;
+	min-height: 107px;
+	min-width: 66px;
+	max-width: 66px;
+	cursor: pointer; 
+}
+
+#left-expand-tooltip {
+	position: absolute;
+	left: 4em;
+	top: 40%;
+	transition: opacity 0.5s;
+	background-color: var(--vibrantOrange);
+	color: var(--backgroundColor);
+	font-size: .75em;
+	padding: .75em;
+	font-weight: bold;
+	border-radius: 5px;
+}
+
+#left-expand-tooltip:after {
+	content: "";
+	position: absolute;
+	top: 40%;
+	left: -1em;
+	margin-left: 2px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent var(--vibrantOrange) transparent transparent;
+}
+
+#left-expand-content {
+	height: 50vh;
+	width: 30vw;
+	margin-left: -9px;
+	position: absolute;
+	left: -30vw;
+	top: 22%;
+	border: 1px solid var(--white);
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	color: var(--white);
+}
+
+
+.leftExpanded {
+	position: absolute;
+	left: 30vw;
+
+	background-color: red;
+}
 
 
 
