@@ -9,18 +9,34 @@ for (let a=0; a < timelineButton.length; a++) {
 }
 
 
-const container = document.getElementById('left-expand-mark-container');
-const tooltip = document.getElementById('left-expand-tooltip');
+const leftContainer = document.getElementById('left-expand-mark-container');
+const leftTooltip = document.getElementById('left-expand-tooltip');
 	
-container.addEventListener("mouseover", hover1, false);
-container.addEventListener("mouseout", hover2, false);
+leftContainer.addEventListener("mouseover", leftHover1, false);
+leftContainer.addEventListener("mouseout", leftHover2, false);
 
-function hover1 (){
-	tooltip.style.visibility = 'visible';
+function leftHover1 (){
+	leftTooltip.style.visibility = 'visible';
 }
 
-function hover2 (){
-	tooltip.style.visibility = 'hidden';
+function leftHover2 (){
+	leftTooltip.style.visibility = 'hidden';
+}
+
+
+
+const rightContainer = document.getElementById('right-expand-mark-container');
+const rightTooltip = document.getElementById('right-expand-tooltip');
+	
+rightContainer.addEventListener("mouseover", rightHover1, false);
+rightContainer.addEventListener("mouseout", rightHover2, false);
+
+function rightHover1 (){
+	rightTooltip.style.visibility = 'visible';
+}
+
+function rightHover2 (){
+	rightTooltip.style.visibility = 'hidden';
 }
 
 

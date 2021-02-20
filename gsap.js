@@ -27,12 +27,21 @@ function removeLandingPage () {
 
 
 function leftExpandFunctionality () {
-	console.log('please work!');
 	const leftExpandQuestion = document.getElementById('left-expand');
 	const leftExpandContent = document.getElementById('left-expand-content');
 	const leftExpandButton = document.getElementById('left-expand-mark-container');
-	leftExpandQuestion.classList.toggle('leftExpanded');
-	leftExpandContent.classList.toggle('leftExpanded');
-	leftExpandButton.classList.toggle('leftExpanded');
+	leftExpandQuestion.classList.toggle('leftExpandOut');
+	leftExpandContent.classList.toggle('leftExpandOut');
+	
 };
 
+
+
+function rightExpandFunctionality () {
+	const rightExpandQuestion = document.getElementById('right-expand');
+	const rightExpandContent = document.getElementById('right-expand-content');
+	const rightExpandButton = document.getElementById('right-expand-mark-container');
+	rightExpandQuestion.classList.toggle('rightExpandOut');
+	rightExpandContent.classList.toggle('rightExpandOut');
+	
+};

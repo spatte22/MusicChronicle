@@ -16,6 +16,7 @@ body {
 	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 	background-color: var(--backgroundColor);
 	color: var(--white);
+	overflow: hidden;
 }
 
 a,
@@ -31,6 +32,7 @@ a:visited {
 
 .homepageBody {
 	height: 90vh;
+	max-width: 90vw;
 	flex: 1 0 auto;
 	overflow: hidden;
 	
@@ -247,6 +249,7 @@ a:visited {
 	width: 33px;
 	padding: ;
 	z-index: ;
+	transition: 1.5s;
 }
 
 #left-expand-mark-container {
@@ -299,15 +302,101 @@ a:visited {
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
 	color: var(--white);
+	background-color: var(--backgroundColor);
+	transition: 1.5s;
+}
+
+.leftExpandOut {
+	position: relative;
+	transform: translateX(30vw);
+	transition: transform 1s ease-in-out ;
 }
 
 
-.leftExpanded {
+
+
+/* CURRENTLY LISTENING TO  - AKA RIGHT EXPAND */
+
+#right-expand {
 	position: absolute;
-	left: 30vw;
-
-	background-color: red;
+	right: 0;
+	top: 40%;
+	background-image: url(images/MusicNote.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 53;
+	width: 33px;
+	padding: ;
+	z-index: ;
+	transition: 1.5s;
 }
+
+#right-expand-mark-container {
+	position: relative;
+	right: 10px;
+	border-top: 1px var(--white) solid;
+	border-left: 1px var(--white) solid;
+	border-bottom: 1px var(--white) solid;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	max-height: 107px;
+	min-height: 107px;
+	min-width: 66px;
+	max-width: 66px;
+	cursor: pointer; 
+}
+
+#right-expand-tooltip {
+	position: absolute;
+	right: 4em;
+	top: 40%;
+	transition: opacity 0.5s;
+	background-color: var(--vibrantOrange);
+	color: var(--backgroundColor);
+	font-size: .75em;
+	padding: .75em;
+	font-weight: bold;
+	border-radius: 5px;
+}
+
+#right-expand-tooltip:after {
+	content: "";
+	position: absolute;
+	top: 40%;
+	right: -.75em;
+	margin-left: ;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent transparent transparent var(--vibrantOrange);
+}
+
+#right-expand-content {
+	height: 50vh;
+	width: 30vw;
+	margin-right: -9px;
+	position: absolute;
+	right: -30vw;
+	top: 22%;
+	border: 1px solid var(--white);
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	color: var(--white);
+	background-color: var(--backgroundColor);
+	transition: 1.5s;
+}
+
+.rightExpandHide {
+	overflow: hidden;
+}
+
+.rightExpandOut {
+	position: relative;
+	transform: translateX(-30vw);
+	transition: transform 1s ease-in-out ;
+}
+
+
 
 
 
