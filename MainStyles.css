@@ -6,6 +6,8 @@
 	--whiteOpacity: 255, 255, 255;  /*for hover white opacity */				
 	--vibrantOrange: #ff4d00;
 	--easyOrange: #ff6929;
+	--subtleOrangeBlack: #130c08;
+
 }
 
 
@@ -17,6 +19,7 @@ body {
 	background-color: var(--backgroundColor);
 	color: var(--white);
 	overflow: hidden;
+	line-height: 1.5;
 }
 
 a,
@@ -32,7 +35,7 @@ a:visited {
 
 .homepageBody {
 	height: 90vh;
-	max-width: 90vw;
+	max-width: ;
 	flex: 1 0 auto;
 	overflow: hidden;
 	
@@ -233,6 +236,40 @@ a:visited {
 	z-index: -10;
 }
 
+.filter-link {
+	margin-left: auto ;
+	margin-right: auto;
+	display: flex;
+	height: 5vh;
+	width: 5vw;
+	align-items: center;
+	justify-content: center;
+}
+#filter-link-button {
+	text-align: center;
+	color: white;
+	width: 6em;
+	height: 3em;
+	border-radius: 20px;
+	opacity: .3;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: ;
+	transition: .5s ease-in-out;
+}
+
+#filter-link-button:hover {
+	cursor: pointer;
+	width: 6em;
+	height: 3em;
+	box-shadow: 0px 2px 15px rgba(var(--whiteOpacity), .5) inset;
+	border-radius: 20px;
+	z-index: ;
+}
+
+
+
 
 
 /* WHAT IS THIS SITE */
@@ -418,7 +455,7 @@ a:visited {
 	border-bottom: 3px solid var(--white);
 	padding: 0 2vw 0 2vw;
 	line-height: 2em;
-	transition: 1.5s ease-in-out;
+	transition: 1s ease-in-out;
 }
 
 .genreSelector li:hover {
